@@ -12,12 +12,12 @@
 
 <body>
 	<!-- Header -->
-	<header class="py-2 fixed top-0 bg-black/30 w-full z-50">
+	<header class="py-[24px] fixed top-0 bg-black/30 w-full z-50">
 		<div class="tcp-container">
 			<!-- Logo + menú -->
-			<div class="flex items-center justify-between mt-2">
+			<div class="flex items-center justify-between">
 				<h1>
-					<img class="bg-gray-200 h-[63px] w-[309px] object-fit" src="" alt="Albatros SpA.">
+					<img class="bg-gray-200 h-[73px] w-[309px] object-fit" src="" alt="Albatros SpA.">
 				</h1>
 
 				<!-- Botón hamburguesa (solo visible en mobile) -->
@@ -40,25 +40,64 @@
 	</header>
 
 	<!-- Carrusel -->
-	<section>
-		<div class="swiper w-full h-[450px] relative">
+	<section class="ky-hero">
+		<div class="swiper w-full h-[500px] relative">
 			<div class="swiper-wrapper max-h-full">
 				<!-- Slide 1 -->
-				<div class="swiper-slide bg-[url('')] flex items-center justify-center bg-gray-300">
-					<div class="tcp-container">
-						
+				<div class="swiper-slide bg-[url('')] pt-[90px] pb-[66px] flex items-center justify-center bg-gray-500">
+					<div class="tcp-container h-full">
+						<div class="flex items-end justify-center h-full">
+							<div class="bg-white py-4 px-8 rounded-[15px] h-fit relative">
+								<img class="absolute -left-[40px] -bottom-[25px] -rotate-25" src="/images/koychi-element-1.png" alt="Koychi K">
+								<img class="absolute size-[115px] -right-[57.5px] -top-[57.5px]" src="/images/koychi-element-2.png" alt="Koychi K">
+								<h2 class="ky-hero__title font-bold uppercase text-[60px] leading-[79%] text-center">
+									Comida coreana
+									<br>
+									<strong>que rompe reglas</strong>
+								</h2>
+								<p class="text-[25px] text-center uppercase">
+									Un sabor de otro mundo... <strong>¡Literal!</strong>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- Slide 1 -->
-				<div class="swiper-slide bg-[url('')] flex items-center justify-center bg-gray-300">
-					<div class="tcp-container">
-						
+				<div class="swiper-slide bg-[url('')] pt-[90px] pb-[66px] flex items-center justify-center bg-gray-500">
+					<div class="tcp-container h-full">
+						<div class="flex items-end justify-center h-full">
+							<div class="bg-white py-4 px-8 rounded-[15px] h-fit relative">
+								<img class="absolute -left-[40px] -bottom-[25px] -rotate-25" src="/images/koychi-element-1.png" alt="Koychi K">
+								<img class="absolute size-[115px] -right-[57.5px] -top-[57.5px]" src="/images/koychi-element-2.png" alt="Koychi K">
+								<h2 class="ky-hero__title font-bold uppercase text-[60px] leading-[79%] text-center">
+									Comida coreana
+									<br>
+									<strong>que rompe reglas</strong>
+								</h2>
+								<p class="text-[25px] text-center uppercase">
+									Un sabor de otro mundo... <strong>¡Literal!</strong>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- Slide 1 -->
-				<div class="swiper-slide bg-[url('')] flex items-center justify-center bg-gray-300">
-					<div class="tcp-container">
-						
+				<div class="swiper-slide bg-[url('')] pt-[90px] pb-[66px] flex items-center justify-center bg-gray-500">
+					<div class="tcp-container h-full">
+						<div class="flex items-end justify-center h-full">
+							<div class="bg-white py-4 px-8 rounded-[15px] h-fit relative">
+								<img class="absolute -left-[40px] -bottom-[25px] -rotate-25" src="/images/koychi-element-1.png" alt="Koychi K">
+								<img class="absolute size-[115px] -right-[57.5px] -top-[57.5px]" src="/images/koychi-element-2.png" alt="Koychi K">
+								<h2 class="ky-hero__title font-bold uppercase text-[60px] leading-[79%] text-center">
+									Comida coreana
+									<br>
+									<strong>que rompe reglas</strong>
+								</h2>
+								<p class="text-[25px] text-center uppercase">
+									Un sabor de otro mundo... <strong>¡Literal!</strong>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -79,10 +118,11 @@
 				el: '.swiper-pagination',
 				clickable: true
 			},
-			// navigation: {
-			// 	nextEl: '.swiper-button-next',
-			// 	prevEl: '.swiper-button-prev'
-			// }
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			speed: 800
 		});
 	</script>
 </body>

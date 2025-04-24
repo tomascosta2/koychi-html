@@ -1,6 +1,30 @@
+/* sofia-sans-latin-wght-normal */
+@font-face {
+	font-family: 'Sofia Sans Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 1 1000;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/sofia-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+body {
+	font-family: 'Sofia Sans Variable', sans-serif;
+}
+
 /* Clase para usar como contenedor */
 .tcp-container {
 	max-width: 1140px;
 	margin: 0 auto;
 	padding: 0 16px;
+}
+
+.swiper-pagination-bullet {
+	background-color: #FFFFFFEE !important;
+}
+.ky-hero .swiper-pagination-bullet-active {
+	background-color: white;
+}
+.ky-hero__title strong {
+	color: #FF0000;
 }
