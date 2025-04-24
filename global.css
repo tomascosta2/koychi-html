@@ -1,0 +1,6 @@
+/* Clase para usar como contenedor */
+.tcp-container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
