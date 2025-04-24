@@ -14,17 +14,37 @@ body {
 
 /* Clase para usar como contenedor */
 .tcp-container {
-	max-width: 1140px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 16px;
 }
 
+/* Titulos */
+.ky-hero__title strong {
+	color: #FF0000;
+}
+
+/* Bottones */
+.ky-btn {
+	background-color: #FF0000;
+	color: white;
+	font-weight: 600;
+	padding: 15px 40px;
+	border-radius: 200px;
+	display: block;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ky-btn.--secondary {
+	background-color: #FFF;
+	color: #111;
+}
+
+/* Hero */
 .swiper-pagination-bullet {
 	background-color: #FFFFFFEE !important;
 }
 .ky-hero .swiper-pagination-bullet-active {
 	background-color: white;
-}
-.ky-hero__title strong {
-	color: #FF0000;
 }
