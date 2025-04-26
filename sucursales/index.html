@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- Instalar -->
+	<link rel="stylesheet" href="../global.css">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="py-[24px] fixed top-0 bg-black/30 w-full z-50">
+		<div class="tcp-container">
+			<!-- Logo + menú -->
+			<div class="flex items-center justify-between">
+				<h1>
+					<img class="bg-gray-200 h-[73px] w-[309px] object-fit" src="" alt="Albatros SpA.">
+				</h1>
+
+				<!-- Botón hamburguesa (solo visible en mobile) -->
+				<button id="menu-btn" class="md:hidden text-[#060082] focus:outline-none" aria-label="Abrir menú">
+					<svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+
+				<!-- Menú de navegación -->
+				<nav id="menu"
+					class="hidden z-50 flex-col gap-4 absolute top-[107px] left-0 w-full p-4 md:static md:top-0 flex md:flex md:flex-row md:items-center md:gap-4 md:w-auto">
+					<a class="uppercase text-white font-medium" href="">Inicio</a>
+					<a class="uppercase text-white font-medium" href="">Nosotros</a>
+					<a class="uppercase text-white font-medium" href="">Productos y servicios</a>
+					<a class="uppercase text-white font-medium" href="">Casos de éxito</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<!-- Carrusel -->
+	<section class="ky-hero">
+		<div class="swiper w-full h-[500px] relative">
+			<div class="swiper-wrapper max-h-full">
+				<!-- Slide 1 -->
+				<div class="swiper-slide rounded-bl-[20px] rounded-br-[20px] bg-[url('')] pt-[90px] pb-[66px] flex items-center justify-center bg-gray-500">
+				</div>
+				<!-- Slide 2 -->
+				<div class="swiper-slide rounded-bl-[20px] rounded-br-[20px] bg-[url('')] pt-[90px] pb-[66px] flex items-center justify-center bg-gray-500">
+				</div>
+				<!-- Slide 3 -->
+				<div class="swiper-slide rounded-bl-[20px] rounded-br-[20px] bg-[url('')] pt-[90px] pb-[66px] flex items-center justify-center bg-gray-500">
+				</div>
+			</div>
+
+			<!-- Paginación y flechas -->
+			<div class="swiper-pagination"></div>
+			<!-- <div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div> -->
+		</div>
+		<h1 class="font-bold text-[32px] md:text-[60px] leading-[110%] text-center mt-12 uppercase">
+			Encuentra tu <strong>Koychi</strong>
+			<br>
+			más cercano
+		</h1>
+	</section>
+	<section class="pt-12 pb-[80px]">
+		<div class="tcp-container">
+			<div class="ky-sucursal">
+				<div>
+					<div class="relative -mb-[15px] md:-mb-[25px] z-50 bg-white flex items-center justify-center mx-auto border-4 border-[#FF0000] size-[75px] rounded-full">
+						<img src="/images/store.svg" alt="">
+					</div>
+					<h2 class="py-2 mb-12 px-18 mx-auto bg-[#FF0000] text-white font-black text-[30px] md:text-[50px] text-center w-fit rounded-[10px]">FOOD TRUCK</h2>
+				</div>
+				<div class="flex flex-col md:flex-row gap-6 md:gap-12">
+					<img class="h-[600px] w-full rounded-[20px] md:flex-2/3 bg-gray-300" src="" alt="">
+					<div class="h-[400px] md:h-[600px] md:flex-1/3 bg-gray-400 rounded-[20px]"></div>
+				</div>
+				<p class="bg-[#111] rounded-[15px] py-2 text-[24px] md:text-[38px] text-white text-center mt-10">
+					<strong>Ubicacion</strong> Aca
+				</p>
+				<p class="text-[24px] md:text-[38px] text-center mt-10">
+					<strong>Horario</strong> Aca
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+		new Swiper('.swiper', {
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			},
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			speed: 800
+		});
+	</script>
+</body>
+
+</html>
